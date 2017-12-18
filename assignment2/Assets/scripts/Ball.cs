@@ -1,11 +1,12 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class Ball : MonoBehaviour
 {
 
-    public static int p1Score;
-    public static int p2Score;
+    int p1Score;
+    int p2Score;
     Vector3 startPos;
 
     // Use this for initialization
@@ -34,9 +35,7 @@ public class Ball : MonoBehaviour
         {
 
             //player 2 gets +1 to score
-
-            Scoreboard_Controller.instance.GiveP2Point();
-
+            p2Score++;
 
             //ball position is reset
             transform.position = startPos;
