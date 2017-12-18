@@ -4,7 +4,7 @@ using System.Collections;
 using UnityEngine.SceneManagement;
 
 
-public class Ball : MonoBehaviour
+public class Ball2 : MonoBehaviour
 {
 
     static int p1Score;
@@ -43,11 +43,9 @@ public class Ball : MonoBehaviour
             p2Score++;
 
             //if player 2's score is 3 or higher
-            if (p2Score==3)
+            if (p2Score == 5)
             {
-                SceneManager.LoadScene(2);
-                p1Score = 0;
-                p2Score = 0;
+                SceneManager.LoadScene(3);
             }
 
             //ball position is reset
@@ -65,11 +63,9 @@ public class Ball : MonoBehaviour
             p1Score++;
 
             //if player 1's score is 3 or higher
-            if (p1Score == 3)
+            if (p1Score == 5)
             {
-                SceneManager.LoadScene(2);
-                p1Score = 0;
-                p2Score = 0;
+                SceneManager.LoadScene(3);
             }
 
             //ball position is reset
@@ -83,3 +79,4 @@ public class Ball : MonoBehaviour
     }
 
 }
+
